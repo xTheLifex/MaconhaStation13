@@ -15,6 +15,6 @@
 	foodtype = JUNKFOOD | SUGAR
 
 /obj/item/trash/trakinas
-	name = "trakinas"
+	name = "empty trakinas"
 	icon = 'icons/maconha/misc/foods.dmi'
 	icon_state= "trakinas-trash"
