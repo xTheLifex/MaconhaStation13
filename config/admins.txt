@@ -15,3 +15,4 @@ iunknow = Game Admin
 kosolov325 = Coder
 fegelein17 = Coder
 diolko = Admin
+retroname = Admin
