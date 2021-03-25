@@ -54,6 +54,30 @@
 	switch(lowertext(new_religion))
 		if("christianity") // DEFAULT_RELIGION
 			B.name = pick("The Holy Bible","The Dead Sea Scrolls")
+		if("hadism") // - Blue
+			B.name = "The Great Seven"
+			B.deity_name = "Hades"
+		if("karionism") // - Red
+			B.name = "The Great Seven"
+			B.deity_name = "Karion"
+		if("sevenism") // - Grey (with a chance of being one of the two above)
+			B.name = "The Great Seven"
+			B.deity_name = pick("Hades", "Karion", "Goldra", "Instro", "Daria", "Azala")
+		if("keanureevism")
+			B.name = pick("How to be breathtaking 101", "Waking up as a Samurai", "Night City Tour Guide")
+		if("minecraft")
+			B.name = pick("Book of Steve", "Book of Alex", "C418", "Top-a-Notch", "Crafting Recipes")
+			B.deity_name = "Notch"
+		if("lifeism","lifenism","life","thelife","thelifeism","thelifism")
+			B.name = pick("Dream Maker Language 101", "Admin Abuse Guide", "How to adminhelp", "How to cry for new features")
+			B.deity_name = "TheLife"
+		if("bolsonarismo","bolsonarism")
+			B.name = pick("Paulo Guedes: Economy", "How to wipe corruption", "To-Death Note", "The new Constitution")
+		if("lula", "lulism", "leftism")
+			B.name = pick("Red Book", "Communist Manifesto", "October Revolution", "Worker's Pride")
+		if("chernobylism")
+			B.name = "Guide to Chernobyl"
+			ADD_TRAIT(H, TRAIT_RADIMMUNE, TRAIT_GENERIC)
 		if("buddhism")
 			B.name = "The Sutras"
 		if("clownism","honkmother","honk","honkism","comedy")

@@ -38,6 +38,10 @@
 	aggressiveness = 1 //Borgs are nicecurity!
 	actions_types = list(/datum/action/item_action/halt)
 
+/obj/item/clothing/mask/gas/sechailer/cyborg/bladewolf
+	name = "blade wolf hailer"
+	aggressiveness = 3
+
 /obj/item/clothing/mask/gas/sechailer/screwdriver_act(mob/living/user, obj/item/I)
 	if(..())
 		return TRUE

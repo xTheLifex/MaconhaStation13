@@ -87,3 +87,62 @@
 		playsound(src, pick('sound/weapons/bulletflyby.ogg', 'sound/weapons/bulletflyby2.ogg', 'sound/weapons/bulletflyby3.ogg'), 75, 1)
 		return BLOCK_SUCCESS | BLOCK_PHYSICAL_EXTERNAL
 	return ..()
+
+
+/obj/item/chainsaw/doomslayer/cyborg
+	name = "High Frequency Energy Chainsaw"
+	armour_penetration = 100
+	force = 15
+	force_on = 35
+
+/obj/item/chainsaw/doomslayer/cyborg/attack_self(mob/user)
+	on = !on
+	to_chat(user, "You [on ? "engage" : "disengage"] the [src] systems. [on ? "It begins to whirr." : "The chain stops moving."]")
+	force = on ? force_on : initial(force)
+	throwforce = on ? force_on : force
+	update_icon()
+	var/datum/component/butchering/butchering = src.GetComponent(/datum/component/butchering)
+	butchering.butchering_enabled = on
+
+	if(on)
+		hitsound = 'sound/weapons/chainsawhit.ogg'
+	else
+		hitsound = "swing_hit"
+
+/obj/item/chainsaw/doomslayer/cyborg/afterattack(atom/O, mob/user, proximity)
+	. = ..()
+	if (!proximity)
+		return
+	var/turf/closed/wall/W = O
+	var/obj/machinery/door/airlock/A = O
+
+	if (W)
+		to_chat(user, SPAN_NOTICE("You begin slicing through the [W]"))
+		do_sparks(rand(1,2), TRUE, W)
+		if (src.use_tool(W, user, 30, volume=100))
+			to_chat(user, SPAN_NOTICE("You slice through the [W]"))
+			do_sparks(rand(1,2), TRUE, W)
+			W.dismantle_wall()
+
+	if (A)
+		to_chat(user, SPAN_NOTICE("You begin slicing through the [A]"))
+		do_sparks(rand(1,2), TRUE, A)
+		if (src.use_tool(A, user, 30, volume=100))
+			to_chat(user, SPAN_NOTICE("You slice through the [A]"))
+			do_sparks(rand(1,2), TRUE, A)
+			A.obj_break()
+
+
+/obj/item/chainsaw/doomslayer/cyborg/run_block(mob/living/owner, atom/object, damage, attack_text, attack_type, armour_penetration, mob/attacker, def_zone, final_block_chance, list/block_return)
+	. = ..()
+	playsound(src, 'sound/weapons/ZapBang.ogg', 55, 1)
+
+/obj/item/chainsaw/doomslayer/cyborg/on_wield(obj/item/source, mob/user)
+	return
+
+/obj/item/chainsaw/doomslayer/cyborg/on_unwield(obj/item/source, mob/user)
+	return
+
+/obj/item/chainsaw/doomslayer/cyborg/suicide_act(mob/living/carbon/user)
+	to_chat(user, SPAN_WARNING("Your systems prevent you from doing that!"))
+	return

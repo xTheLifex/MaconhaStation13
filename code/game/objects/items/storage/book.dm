@@ -37,6 +37,8 @@ GLOBAL_LIST_INIT(bibleitemstates, list("bible", "koran", "scrapbook", "bible",  
 	righthand_file = 'icons/mob/inhands/misc/books_righthand.dmi'
 	var/mob/affecting = null
 	var/deity_name = "Christ"
+	var/linked_altar = null
+	var/timing_out = FALSE
 	force_string = "holy"
 
 /obj/item/storage/book/bible/Initialize()

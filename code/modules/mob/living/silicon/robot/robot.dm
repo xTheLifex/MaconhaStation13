@@ -136,6 +136,14 @@
 	if(BORG_SEC_AVAILABLE)
 		modulelist["Security"] = /obj/item/robot_module/security
 
+	var/special = FALSE
+	if (src.client && ckey(src.client.ckey) == "fegelein17")
+		modulelist["Blade Wolf"] = /obj/item/robot_module/blade_wolf
+		special = TRUE
+
+	to_chat(src, SPAN_NOTICE("You have [special ? "some" : "no"] special modules avaiable"))
+
+
 	var/input_module = input("Please, select a module!", "Robot", null, null) as null|anything in modulelist
 	if(!input_module || module.type != /obj/item/robot_module)
 		return
@@ -710,6 +718,9 @@
 
 /mob/living/silicon/robot/modules/security
 	set_module = /obj/item/robot_module/security
+
+/mob/living/silicon/robot/modules/blade_wolf
+	set_module = /obj/item/robot_module/blade_wolf
 
 /mob/living/silicon/robot/modules/clown
 	set_module = /obj/item/robot_module/clown

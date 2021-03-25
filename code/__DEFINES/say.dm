@@ -104,3 +104,13 @@
 // Audio/Visual Flags. Used to determine what sense are required to notice a message.
 #define MSG_VISUAL (1<<0)
 #define MSG_AUDIBLE (1<<1)
+
+
+// Span Classes
+
+#define SPAN_USERDANGER(T) "<span class='userdanger'>[T]</span>"
+#define SPAN_WARNING(T) "<span class='warning'>[T]</span>"
+#define SPAN_SUICIDE(T) "<span class='suicide'>[T]</span>"
+#define SPAN_DANGER(T) "<span class='danger'>[T]</span>"
+#define SPAN_NOTICE(T) "<span class='notice'>[T]</span>"
+

@@ -48244,24 +48244,27 @@
 	name = "Station Intercom";
 	pixel_y = 26
 	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 4
-	},
 /turf/open/floor/plasteel,
 /area/security/warden)
 "bFR" = (
-/obj/machinery/suit_storage_unit/security,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
+/obj/structure/table/reinforced,
+/obj/item/gun/ballistic/automatic/speargun{
+	pixel_x = 0;
+	pixel_y = 12
 	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
+/obj/item/ammo_casing/caseless/magspear{
+	pixel_y = 8
 	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
+/obj/item/ammo_casing/caseless/magspear{
+	pixel_y = 5
 	},
-/turf/open/floor/plasteel/dark,
+/obj/item/ammo_casing/caseless/magspear{
+	pixel_y = 2
+	},
+/obj/item/ammo_casing/caseless/magspear{
+	pixel_y = 0
+	},
+/turf/open/floor/plasteel,
 /area/security/warden)
 "bFS" = (
 /obj/machinery/light{
@@ -49484,31 +49487,11 @@
 	},
 /turf/open/floor/plasteel,
 /area/security/warden)
-"bHJ" = (
+"bHK" = (
 /obj/structure/cable/white{
 	icon_state = "4-8"
-	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 4
 	},
 /turf/open/floor/plasteel,
-/area/security/warden)
-"bHK" = (
-/obj/structure/tank_dispenser/oxygen,
-/obj/structure/cable/white{
-	icon_state = "4-8"
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
 /area/security/warden)
 "bHL" = (
 /obj/structure/cable/white{
@@ -50759,25 +50742,11 @@
 /turf/open/floor/plating,
 /area/security/warden)
 "bJD" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 4
-	},
 /turf/open/floor/plasteel,
 /area/security/warden)
 "bJE" = (
-/obj/machinery/suit_storage_unit/security,
-/obj/machinery/light/small,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
+/obj/vehicle/ridden/space/speedbike/red,
+/turf/open/floor/plasteel,
 /area/security/warden)
 "bJF" = (
 /obj/structure/chair/office/dark{
@@ -125763,6 +125732,10 @@
 	},
 /turf/open/floor/plating,
 /area/quartermaster/storage)
+"hgC" = (
+/obj/structure/sign/poster/official/ion_rifle,
+/turf/closed/wall/r_wall,
+/area/ai_monitored/security/armory)
 "hic" = (
 /obj/structure/table/reinforced,
 /obj/item/integrated_electronics/analyzer,
@@ -125772,6 +125745,20 @@
 	dir = 10
 	},
 /area/science/circuit)
+"hnp" = (
+/obj/machinery/suit_storage_unit/security,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/security/warden)
 "hnq" = (
 /obj/machinery/atmospherics/pipe/simple/cyan/visible{
 	dir = 4
@@ -126317,6 +126304,23 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/chapel/office)
+"kKF" = (
+/obj/structure/tank_dispenser/oxygen,
+/obj/structure/cable/white{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/security/warden)
 "kLu" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -126344,6 +126348,21 @@
 	},
 /turf/open/floor/plasteel,
 /area/maintenance/port/fore)
+"kOl" = (
+/obj/machinery/suit_storage_unit/security,
+/obj/machinery/light/small,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/security/warden)
 "kPJ" = (
 /obj/structure/reagent_dispensers/watertank,
 /obj/effect/turf_decal/tile/neutral{
@@ -126660,6 +126679,10 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/science/research)
+"mQO" = (
+/obj/structure/sign/poster/official/nanotrasen_logo,
+/turf/closed/wall,
+/area/crew_quarters/locker)
 "mUH" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/machinery/atmospherics/components/binary/pump{
@@ -126835,6 +126858,10 @@
 "oNF" = (
 /obj/item/kirbyplants/random,
 /turf/open/floor/plasteel,
+/area/security/prison)
+"oPW" = (
+/obj/structure/sign/poster/official/enlist,
+/turf/closed/wall/r_wall,
 /area/security/prison)
 "oSD" = (
 /obj/machinery/meter,
@@ -127055,6 +127082,10 @@
 	dir = 9
 	},
 /area/science/circuit)
+"rjN" = (
+/obj/structure/sign/poster/official/yes_erp,
+/turf/closed/wall,
+/area/crew_quarters/dorms)
 "rCv" = (
 /turf/open/floor/plasteel/white/side{
 	dir = 6
@@ -127132,6 +127163,10 @@
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/miningoffice)
+"rWL" = (
+/obj/structure/sign/poster/official/duelshotgun,
+/turf/closed/wall,
+/area/maintenance/port/fore)
 "saw" = (
 /turf/closed/wall,
 /area/science/circuit)
@@ -127199,6 +127234,10 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/maintenance/starboard/fore)
+"tbq" = (
+/obj/structure/sign/poster/official/get_your_legs,
+/turf/closed/wall,
+/area/crew_quarters/fitness/pool)
 "tgB" = (
 /obj/machinery/atmospherics/pipe/manifold/cyan/visible{
 	dir = 8
@@ -127389,6 +127428,10 @@
 	},
 /turf/open/floor/engine,
 /area/engine/supermatter)
+"vaV" = (
+/obj/structure/sign/poster/official/space_cops,
+/turf/closed/wall/r_wall,
+/area/security/main)
 "vcs" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 5
@@ -127466,6 +127509,15 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/science/mixing)
+"vDm" = (
+/obj/structure/cable/white{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/security/warden)
 "vFi" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -127715,6 +127767,12 @@
 /obj/item/clothing/under/misc/burial,
 /turf/open/floor/plasteel/dark,
 /area/chapel/office)
+"xFX" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/security/warden)
 "xGC" = (
 /obj/effect/turf_decal/bot,
 /obj/machinery/atmospherics/components/binary/pump{
@@ -157205,7 +157263,7 @@ aDw
 aEA
 aDw
 bnd
-alf
+rWL
 bqr
 bss
 aad
@@ -177281,7 +177339,7 @@ bgZ
 clv
 cng
 coF
-cqd
+mQO
 crv
 csX
 cuA
@@ -178578,7 +178636,7 @@ cCd
 cDD
 cFx
 cGU
-cAw
+rjN
 cJk
 cLa
 cMx
@@ -179553,7 +179611,7 @@ aFm
 aFm
 aFm
 aFm
-aFm
+oPW
 aZq
 bbf
 aFm
@@ -179863,7 +179921,7 @@ cAw
 cAw
 cAw
 cAw
-cAw
+rjN
 cJp
 cLf
 cMC
@@ -181117,7 +181175,7 @@ bAs
 bCm
 bhd
 bFQ
-bHJ
+bHK
 bJD
 bLs
 bNq
@@ -181162,7 +181220,7 @@ cYr
 dab
 dbF
 ddv
-aay
+tbq
 aaG
 aaV
 aaN
@@ -181630,10 +181688,10 @@ byQ
 bAu
 bCo
 bhd
-bFL
-bHL
-bFL
-bLs
+xFX
+vDm
+xFX
+hgC
 bNs
 bPz
 bRv
@@ -181886,10 +181944,10 @@ bxt
 bmr
 bAv
 bCp
-bhd
-aad
-aaa
-aad
+vaV
+hnp
+kKF
+kOl
 bLs
 bNt
 bPA
@@ -182144,9 +182202,9 @@ bhd
 bhd
 bhd
 bhd
-aad
-aaa
-aad
+bFL
+bHL
+bFL
 bLs
 bLs
 bLs
