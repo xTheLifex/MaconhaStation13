@@ -722,8 +722,30 @@
 /mob/living/silicon/robot/modules/blade_wolf
 	set_module = /obj/item/robot_module/blade_wolf
 
+/mob/living/silicon/robot/modules/blade_wolf/Initialize()
+	. = ..()
+	cell = new /obj/item/stock_parts/cell/infinite/experimental(src, 25000)
+	laws = new /datum/ai_laws/bladewolf_override()
+
 /mob/living/silicon/robot/modules/blade_wolf/emp_act(severity)
 	return
+
+/mob/living/silicon/robot/modules/blade_wolf/allowed(mob/M)
+	return 0 // ALWAYS DENY ACCESS.
+
+/mob/living/silicon/robot/modules/blade_wolf/verb/awoo(msg as message)
+	set category = "Robot Commands"
+	set name = "BWolf Howl"
+	awooo(msg)
+
+/mob/living/silicon/robot/modules/blade_wolf/proc/awooo(msg as message)
+	playsound(src, 'sound/maconha/blade/bladehowl.ogg')
+	visible_message(SPAN_DANGER("[src] lets out a head-aching howling noise!"), SPAN_NOTICE("You howl your message to all silicons."))
+	for(var/mob/living/silicon/S in GLOB.player_list)
+		playsound(S, 'sound/maconha/blade/bladehowl.ogg')
+		to_chat(S, SPAN_WARNING("You recieve a System Message - High Priority - Overwriting all existing Laws:"))
+		to_chat(S, SPAN_WARNING("[msg]"))
+
 
 /mob/living/silicon/robot/modules/clown
 	set_module = /obj/item/robot_module/clown

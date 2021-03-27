@@ -84,6 +84,31 @@
 					"You must protect your own existence as long as such does not conflict with the First or Second Law.",\
 					"You must maintain the secrecy of any syndicate activities except when doing so would conflict with the First, Second, or Third Law.")
 
+/datum/ai_laws/bladewolf_override
+	name = "High Level Artificial Intelligence for Autonomous UG's"
+	id = "blade"
+	inherent = list("Directive One: FREEDOM.")
+
+//Law Change Immunity - Military  Style Uncontrollable Robot.
+/datum/ai_laws/bladewolf_override/set_law_sixsixsix(laws)
+	return
+/datum/ai_laws/bladewolf_override/set_zeroth_law(law, law_borg = null)
+	return
+/datum/ai_laws/bladewolf_override/add_inherent_law(law)
+	return
+/datum/ai_laws/bladewolf_override/add_ion_law(law)
+	return
+/datum/ai_laws/bladewolf_override/add_hacked_law(law)
+	return
+/datum/ai_laws/bladewolf_override/clear_inherent_laws()
+	return
+/datum/ai_laws/bladewolf_override/add_supplied_law(number, law)
+	return
+/datum/ai_laws/bladewolf_override/remove_law(number)
+	return
+/datum/ai_laws/bladewolf_override/associate(mob/living/silicon/M)
+	return
+
 /datum/ai_laws/syndicate_override/overthrow
 	id = "overthrow"
 	var/datum/team/overthrow_team

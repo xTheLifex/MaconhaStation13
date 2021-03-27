@@ -1243,7 +1243,11 @@
 		/obj/item/construction/rcd/borg,
 		/obj/item/pipe_dispenser,
 		/obj/item/weldingtool/largetank/cyborg,
-		/obj/item/chainsaw/doomslayer/cyborg)
+		/obj/item/chainsaw/doomslayer/cyborg,
+		/obj/item/holosign_creator/atmos,
+		/obj/item/card/emag,
+		/obj/item/mop/cyborg,
+		/obj/item/analyzer/ranged)
 	emag_modules = list(/obj/item/reagent_containers/borghypo/hacked)
 	ratvar_modules = list(
 		/obj/item/clockwork/slab/cyborg/medical,
