@@ -722,6 +722,9 @@
 /mob/living/silicon/robot/modules/blade_wolf
 	set_module = /obj/item/robot_module/blade_wolf
 
+/mob/living/silicon/robot/modules/blade_wolf/emp_act(severity)
+	return
+
 /mob/living/silicon/robot/modules/clown
 	set_module = /obj/item/robot_module/clown
 

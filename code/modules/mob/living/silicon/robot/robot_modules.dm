@@ -1213,9 +1213,7 @@
 	basic_modules = list(
 		/obj/item/inducer/cyborg,
 		/obj/item/borg/sight/xray/truesight_lens,
-		/obj/item/borg/sight/thermal,
 		/obj/item/borg/sight/meson,
-		/obj/item/borg/sight/material,
 		/obj/item/borg/sight/hud/med,
 		/obj/item/borg/sight/hud/sec,
 		/obj/item/assembly/flash/cyborg,
